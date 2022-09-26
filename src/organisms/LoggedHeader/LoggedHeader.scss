@@ -1,0 +1,59 @@
+.container__ {
+  &loggedHeader {
+    width: 100%;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.header__ {
+  &profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.profile__ {
+  &text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-right: 0.8rem;
+  }
+
+  &username {
+    margin-left: 0.2rem;
+    margin-bottom: 0.435rem;
+    font-weight: 500;
+    color: #6e6b7b;
+    line-height: 1;
+    font-size: 0.875rem;
+  }
+
+  &class {
+    color: #6e6b7b;
+    font-size: smaller;
+    line-height: 1;
+  }
+
+  &image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 40px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+}

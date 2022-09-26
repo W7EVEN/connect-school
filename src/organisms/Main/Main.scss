@@ -1,0 +1,123 @@
+.container {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    padding: 0 4%;
+
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/bg.png");
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+    padding: 0 4%;
+  }
+
+  &__fluid {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__details {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+.navbar {
+  &__options {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__option {
+    &--rounded {
+      background-color: #ffa84c;
+      box-shadow: 0px 5px 30px 0px #00000080;
+      border-radius: 50px;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      width: fit-content;
+      margin: auto;
+
+      &:hover {
+        background-color: #ffa84c;
+        box-shadow: 0px 4px 20px 0px #00000080;
+        border-radius: 50px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__link {
+    &--yellow {
+      background-color: #ffb255;
+      box-shadow: 0px 5px 30px 0px #efa23e9c;
+      height: 46px;
+      min-width: 165px;
+      color: #ffffff !important;
+      font-weight: 700;
+      border-radius: 50px;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      padding-top: 9px;
+
+      &:hover {
+        background-color: #eca34a;
+        box-shadow: 0px 4px 20px 0px #ffba5f73;
+      }
+    }
+
+    &--purple {
+      background-color: #7064f5;
+      box-shadow: 0px 5px 30px 0px #7b6ff67a;
+      height: 46px;
+      min-width: 165px;
+      color: #ffffff !important;
+      font-weight: 700;
+      border-radius: 50px;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      padding-top: 9px;
+
+      &:hover {
+        background-color: #5c50d8;
+        box-shadow: 0px 4px 20px 0px #6f64e270;
+      }
+    }
+  }
+}
+
+.title {
+  &__accent {
+    color: #7064f5;
+  }
+}

@@ -1,0 +1,102 @@
+.container__ {
+  &signUpSection {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  &left {
+    width: 66.66666667%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &right {
+    width: 33.3333333%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &register {
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.714rem;
+      line-height: 1.2;
+      color: #5e5873;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.5rem;
+      color: #6e6b7b;
+    }
+  }
+}
+
+.registration__ {
+  &form {
+    margin-top: 1.5rem;
+  }
+
+  &redirection {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+
+    span {
+      margin-right: 0.625rem;
+    }
+
+    a {
+      color: #7367f0;
+    }
+  }
+}
+
+.form__ {
+  &inputSection {
+    margin-bottom: 1.5rem;
+  }
+
+  &label {
+    margin-bottom: 0.2857rem;
+    font-size: 0.857rem;
+    color: #5e5873;
+    display: inline-block;
+  }
+
+  &input {
+    padding: 0.571rem 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d8d6de;
+    border-radius: 0.357rem;
+
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #6e6b7b;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}

@@ -1,0 +1,73 @@
+.logo__link {
+  color: #000000;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.header {
+  &__navbar {
+    display: flex;
+
+    &__link {
+      cursor: pointer;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      border-radius: 30px;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      padding: 0.625rem;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.sign__button {
+  cursor: pointer;
+  border-color: #7367f0;
+  background-color: #7367f0;
+  position: relative;
+  box-shadow: none;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0.786rem 1.5rem;
+  border-radius: 0.358rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1;
+  width: 100%;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    border-radius: 0.358rem;
+    background-color: #7367f0;
+  }
+}
